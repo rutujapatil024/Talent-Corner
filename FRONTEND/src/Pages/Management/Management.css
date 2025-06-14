@@ -1,0 +1,116 @@
+.management-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+  }
+  
+  .management-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .management-header span {
+    color: #6a1b9a;
+  }
+  .img-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .management-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* optional */
+  }
+  
+  .leader {
+    margin-bottom: 3rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  }
+  
+  .leader h2 {
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+  }
+  
+  .leader span {
+    color: #6a1b9a;
+  }
+  
+  .leader p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+  }
+  
+  .leader ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .leader ul li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .know-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6a1b9a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .know-more-btn:hover {
+    background-color: #541180;
+  }
+  
+  .contact-us {
+    text-align: center;
+    background: #f3f3f3;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .contact-us h2 {
+    font-size: 1.8rem;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-us span {
+    color: #6a1b9a;
+  }
+  
+  .contact-us p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+  }
+  
+  .call-now-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #6a1b9a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-now-btn:hover {
+    background-color: #4b0e6d;
+  }
+  

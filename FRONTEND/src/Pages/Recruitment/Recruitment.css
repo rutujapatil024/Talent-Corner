@@ -1,0 +1,72 @@
+.recruitment-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.recruitment-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recruitment-header h1 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+}
+
+.recruitment-content {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.recruitment-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.recruitment-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recruitment-text {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.recruitment-text h2 {
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+.recruitment-text ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+
+
+@media (max-width: 768px) {
+  .recruitment-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recruitment-image,
+  .recruitment-text {
+    max-width: 100%;
+  }
+
+  .get-in-touch-form {
+    padding: 1.5rem;
+  }
+}

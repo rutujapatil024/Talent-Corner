@@ -1,0 +1,92 @@
+/* src/components/GetInTouchForm.css */
+.get-in-touch-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .get-in-touch-form h2 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 1.5rem;
+  }
+  
+  .get-in-touch-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .checkboxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkboxes b {
+    margin-right: 0.5rem;
+    color: #6a1b9a;
+    font-weight: bold;
+  }
+  
+  .checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .checkboxes input[type="radio"] {
+    accent-color: #6a1b9a;
+    transform: scale(1.1);
+    margin: 0;
+  }
+  
+  .get-in-touch-form button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  .get-in-touch-form button:hover {
+    background-color: #53167a;
+  }
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  .status-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .status-message.success {
+    color: green;
+  }
+  
+  .status-message.error {
+    color: red;
+  }
+  
+  

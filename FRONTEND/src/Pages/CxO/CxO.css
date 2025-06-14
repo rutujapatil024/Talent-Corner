@@ -1,0 +1,51 @@
+.cxo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .cxo-content {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .cxo-image {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .cxo-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cxo-text {
+    flex: 2;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .cxo-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .cxo-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cxo-image,
+    .cxo-text {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,84 @@
+.clients-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.clients-title {
+  font-size: 28px;
+  color: #5d2e79;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.client-card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.client-logo {
+  max-height: 100px;
+  object-fit: contain;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+  transform: scale(1.15);
+}
+
+.client-card.visible {
+  animation: fadeInUp 0.6s forwards;
+}
+/* src/components/ContactBar.css */
+
+.contact-bar {
+  width: 100%;
+  background-color: #5d2e79;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+  font-size: 16px;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.contact-icon {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Keyframe animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

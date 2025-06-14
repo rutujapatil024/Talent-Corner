@@ -1,0 +1,74 @@
+/* src/components/Values.css */
+
+.values-section {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: #f9f9f9;
+    margin-left: 60px;
+  }
+  
+  .values-heading {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #5d2e79;
+  }
+  
+  .core-title {
+    font-size: 28px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .core-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .values-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .value-card {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(68, 179, 68);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  
+  .value-icon {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .value-card h4 {
+    font-size: 20px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+  }
+  
+  .keywords {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 12px;
+  }
+  
+  .value-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  

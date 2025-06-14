@@ -1,0 +1,123 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .home-left {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .home-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .home-left p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .get-in-touch-btn {
+    padding: 14px 25px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .get-in-touch-btn:hover {
+    background-color: #444;
+
+  }
+  
+  .home-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f9f9f9;
+
+  }
+  .clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .values{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  
+}
+
+.intro-video,
+.last {
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+}
+
+
+.review-box {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}

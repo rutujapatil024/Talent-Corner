@@ -1,0 +1,201 @@
+.mission-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.mission-header,
+.vision-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mission-header h1,
+.vision-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.mission-header span,
+.vision-header span {
+  color: #6a1b9a;
+}
+
+.mission-header p,
+.vision-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.director-signature {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: #6a1b9a;
+}
+
+.director-signature span {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+/* Milestones Section */
+.milestone-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.milestone-title {
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.milestone-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+.milestone-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.milestone-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1.2rem 2rem; /* Equal left/right padding */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadePopIn 1.5s ease-out forwards;
+}
+
+
+
+.milestone-item:nth-child(1) { animation-delay: 0.2s; }
+.milestone-item:nth-child(2) { animation-delay: 0.4s; }
+.milestone-item:nth-child(3) { animation-delay: 0.6s; }
+.milestone-item:nth-child(4) { animation-delay: 0.8s; }
+.milestone-item:nth-child(5) { animation-delay: 1s; }
+.milestone-item:nth-child(6) { animation-delay: 2s; }
+.milestone-item:nth-child(7) { animation-delay: 3s; }
+
+.milestone-icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  animation: pulse 2s infinite alternate;
+}
+
+.milestone-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ vertically center text inside milestone box */
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: textReveal 1.5s ease-out forwards;
+  animation-delay: 0.6s;
+  text-align: center;
+}
+
+.milestone-item:nth-child(1) .milestone-text { animation-delay: 0.2s; }
+.milestone-item:nth-child(2) .milestone-text { animation-delay: 0.3s; }
+.milestone-item:nth-child(3) .milestone-text { animation-delay: 0.4s; }
+.milestone-item:nth-child(4) .milestone-text { animation-delay: 0.5s; }
+.milestone-item:nth-child(5) .milestone-text { animation-delay: 0.6s; }
+.milestone-item:nth-child(6) .milestone-text { animation-delay: 0.7s; }
+.milestone-item:nth-child(7) .milestone-text { animation-delay: 0.8s; }
+
+.milestone-text h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+.milestone-text p {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadePopIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .milestone-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .milestone-column {
+    width: 100%;
+  }
+
+  .milestone-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .milestone-text {
+    transform: translateY(20px);
+    animation: textRevealY 0.6s ease-out forwards;
+  }
+
+  @keyframes textRevealY {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

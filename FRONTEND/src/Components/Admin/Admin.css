@@ -1,0 +1,92 @@
+/* admin.css */
+.admin-panel {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.admin-panel h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color:rgb(68, 179, 68);
+  color: white;
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* admin.css - Add this below your existing styles */
+.admin-login {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.admin-login h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  
+}
+
+.admin-login input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-login button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+ 
+}
+
+.admin-login .error {
+  margin-top: 1rem;
+  color: red;
+  text-align: center;
+  font-size: 18px;
+
+}
+.logout-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.logout-container button {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
